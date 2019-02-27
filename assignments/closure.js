@@ -2,6 +2,25 @@
 // Write a simple closure of your own creation.  Keep it simple!
 
 
+function myClosure() {
+console.log('this is my closure example');
+const message = "This is my message from within myClosure";
+
+function secondClosure() {
+  console.log(`example: ${message}`);
+  const anothermessage = 'This is another message from within my secondClosure';
+
+  function thirdClosure() {
+    console.log(`${message} and ${anothermessage}`)
+  }
+  thirdClosure();
+}
+secondClosure();
+}
+myClosure();
+
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
